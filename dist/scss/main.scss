@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+@mixin border-radius-right {
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+
+}
+
+@mixin border-radius-left {
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+}
+
+@mixin overall-card-layout {
+    p {
+        color: hsl(0, 0%, 95%);
+        font-family: 'Lexend Deca', sans-serif;
+        padding: 1em 5em 5em 3em;
+
+        line-height: 2em;
+
+        font-size: 15px;
+    }
+
+    h1 {
+        padding-left: 1.5em;
+        text-transform: uppercase;
+        color: hsl(0, 0%, 95%);
+        font-family: 'Big Shoulders Display';
+    }
+
+    img {
+        padding: 2em 0 0 3em;
+    }
+
+    button {
+        display: block;
+        margin-left: 3em;
+        margin-bottom: 3em;
+        color: hsl(0, 0%, 95%);
+        font-family: 'Lexend Deca', sans-serif;
+        border: hsl(0, 0%, 95%);
+        border-style: solid;
+        border-radius: 2em;
+        padding: 1em 2em 1em 2em;
+        text-align: center;
+        cursor: pointer;
+    }
+
+
+
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+#card-component {
+    margin: 8em 15em 0 15em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#sedan-card {
+
+    background-color: hsl(31, 77%, 52%);
+    @include overall-card-layout;
+    @include border-radius-left;
+
+}
+
+#sedan-card button {
+    background-color: hsl(31, 77%, 52%);
+}
+
+
+#suvs-card {
+
+    background-color: hsl(184, 100%, 22%);
+    @include overall-card-layout;
+
+}
+
+#suvs-card button {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#luxury-card {
+
+    background-color: hsl(179, 100%, 13%);
+    @include overall-card-layout;
+    @include border-radius-right;
+}
+
+#luxury-card button {
+    background-color: hsl(179, 100%, 13%);
+
+}
+.attribution{
+    padding-top: 2em;
+}
