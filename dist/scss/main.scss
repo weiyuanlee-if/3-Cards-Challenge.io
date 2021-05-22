@@ -5,6 +5,8 @@ $screen-xs-max: 320px; // Tiny phones
 $screen-sm-max: 481px; // Small tablets and large smartphones (landscape view)
 $screen-md-max: 641px; // Small tablets (portrait view)
 $screen-lg-max: 961px;
+$screen-xl-max: 1025px;
+$screen-xxl-min: 1200px;
 
 @mixin xs {
     @media screen and (max-width: #{$screen-xs-max}) {
@@ -25,8 +27,21 @@ $screen-lg-max: 961px;
         @content;
     }
 }
+
 @mixin lg {
     @media screen and (max-width: #{$screen-lg-max}) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media screen and (max-width: #{$screen-xl-max}) {
+        @content;
+    }
+}
+
+@mixin xxl {
+    @media screen and (min-width: #{$screen-xxl-min}) {
         @content;
     }
 }
@@ -94,43 +109,59 @@ body {
 
     @include xs {
 
-        margin: 8em 15em 0 15em;
+        margin: 15em 15em 15em 15em;
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 50%;
-        
+
     }
-    
+
     @include sm {
-       
-        margin: 8em 15em 0 15em;
+
+        margin: 15em 15em 15em 15em;
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 50%;
-        
+
     }
-    
+
     @include md {
-    
-        margin: 8em 15em 0 15em;
+
+        margin: 15em 15em 15em 15em;
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 50%;
-        
+
     }
-    
+
     @include lg {
-    
-        margin: 8em 15em 0 15em;
+
+        margin: 15em 15em 15em 15em;
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 50%;
-        
+
     }
+
+    @include xl {
+        margin: 15em 15em 15em 15em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+    }
+    @include xxl {
+        margin: 8em 15em 0 15em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      
+    }
+
 }
 
 #sedan-card {
@@ -183,4 +214,3 @@ body {
     background-color: hsl(179, 100%, 13%);
 
 }
-
