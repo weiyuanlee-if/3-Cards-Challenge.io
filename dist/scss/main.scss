@@ -1,42 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
 
-$screen-xs-min: 425px; // Tiny phones
-$screen-sm-min: 576px; // Small tablets and large smartphones (landscape view)
-$screen-md-min: 768px; // Small tablets (portrait view)
-$screen-lg-min: 992px; // Tablets and small desktops
-$screen-xl-min: 1200px; // Large tablets and desktops
+$screen-xs-max: 320px; // Tiny phones
+$screen-sm-max: 481px; // Small tablets and large smartphones (landscape view)
+$screen-md-max: 641px; // Small tablets (portrait view)
+$screen-lg-max: 961px;
 
 @mixin xs {
-    @media (min-width: #{$screen-xs-min}) {
+    @media screen and (max-width: #{$screen-xs-max}) {
         @content;
     }
 }
 
 // Tiny devices
 @mixin sm {
-    @media (min-width: #{$screen-sm-min}) {
+    @media screen and (max-width: #{$screen-sm-max}) {
         @content;
     }
 }
 
 // Small devices
 @mixin md {
-    @media (min-width: #{$screen-md-min}) {
+    @media screen and (max-width: #{$screen-md-max}) {
         @content;
     }
 }
-
-// Medium devices
 @mixin lg {
-    @media (min-width: #{$screen-lg-min}) {
-        @content;
-    }
-}
-
-// Large devices
-@mixin xl {
-    @media (min-width: #{$screen-xl-min}) {
+    @media screen and (max-width: #{$screen-lg-max}) {
         @content;
     }
 }
@@ -126,27 +116,21 @@ body {
     
         margin: 8em 15em 0 15em;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
+        width: 50%;
         
     }
     
     @include lg {
-       
+    
         margin: 8em 15em 0 15em;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
+        width: 50%;
         
     }
-    
-    @include xl {
-        
-        margin: 8em 15em 0 15em;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    
 }
 
 #sedan-card {
@@ -199,4 +183,4 @@ body {
     background-color: hsl(179, 100%, 13%);
 
 }
-}
+
