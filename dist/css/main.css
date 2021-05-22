@@ -18,13 +18,95 @@ body {
           justify-content: center;
 }
 
-#sedan-card {
+@media (min-width: 425px) {
+  #card-component {
+    margin: 8em 15em 0 15em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 50%;
+  }
+}
+
+@media (min-width: 576px) {
+  #card-component {
+    margin: 8em 15em 0 15em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  #card-component {
+    margin: 8em 15em 0 15em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 992px) {
+  #card-component {
+    margin: 8em 15em 0 15em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  #card-component {
+    margin: 8em 15em 0 15em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+#card-component #sedan-card {
   background-color: #e38826;
   border-top-left-radius: 0.5em;
   border-bottom-left-radius: 0.5em;
 }
 
-#sedan-card p {
+#card-component #sedan-card p {
   color: #f2f2f2;
   font-family: 'Lexend Deca', sans-serif;
   padding: 1em 5em 5em 3em;
@@ -32,18 +114,18 @@ body {
   font-size: 15px;
 }
 
-#sedan-card h1 {
+#card-component #sedan-card h1 {
   padding-left: 1.5em;
   text-transform: uppercase;
   color: #f2f2f2;
   font-family: 'Big Shoulders Display';
 }
 
-#sedan-card img {
+#card-component #sedan-card img {
   padding: 2em 0 0 3em;
 }
 
-#sedan-card button {
+#card-component #sedan-card button {
   display: block;
   margin-left: 3em;
   margin-bottom: 3em;
@@ -57,20 +139,20 @@ body {
   background-color: #f2f2f2;
 }
 
-#sedan-card button {
+#card-component #sedan-card button {
   color: #e38826;
 }
 
-#sedan-card button:hover {
+#card-component #sedan-card button:hover {
   color: #f2f2f2;
   background-color: #e38826;
 }
 
-#suvs-card {
+#card-component #suvs-card {
   background-color: #006970;
 }
 
-#suvs-card p {
+#card-component #suvs-card p {
   color: #f2f2f2;
   font-family: 'Lexend Deca', sans-serif;
   padding: 1em 5em 5em 3em;
@@ -78,18 +160,18 @@ body {
   font-size: 15px;
 }
 
-#suvs-card h1 {
+#card-component #suvs-card h1 {
   padding-left: 1.5em;
   text-transform: uppercase;
   color: #f2f2f2;
   font-family: 'Big Shoulders Display';
 }
 
-#suvs-card img {
+#card-component #suvs-card img {
   padding: 2em 0 0 3em;
 }
 
-#suvs-card button {
+#card-component #suvs-card button {
   display: block;
   margin-left: 3em;
   margin-bottom: 3em;
@@ -103,22 +185,22 @@ body {
   background-color: #f2f2f2;
 }
 
-#suvs-card button {
+#card-component #suvs-card button {
   color: #006970;
 }
 
-#suvs-card button:hover {
+#card-component #suvs-card button:hover {
   color: #f2f2f2;
   background-color: #006970;
 }
 
-#luxury-card {
+#card-component #luxury-card {
   background-color: #004241;
   border-top-right-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
 }
 
-#luxury-card p {
+#card-component #luxury-card p {
   color: #f2f2f2;
   font-family: 'Lexend Deca', sans-serif;
   padding: 1em 5em 5em 3em;
@@ -126,18 +208,18 @@ body {
   font-size: 15px;
 }
 
-#luxury-card h1 {
+#card-component #luxury-card h1 {
   padding-left: 1.5em;
   text-transform: uppercase;
   color: #f2f2f2;
   font-family: 'Big Shoulders Display';
 }
 
-#luxury-card img {
+#card-component #luxury-card img {
   padding: 2em 0 0 3em;
 }
 
-#luxury-card button {
+#card-component #luxury-card button {
   display: block;
   margin-left: 3em;
   margin-bottom: 3em;
@@ -151,16 +233,12 @@ body {
   background-color: #f2f2f2;
 }
 
-#luxury-card button {
+#card-component #luxury-card button {
   color: #004241;
 }
 
-#luxury-card button:hover {
+#card-component #luxury-card button:hover {
   color: #f2f2f2;
   background-color: #004241;
-}
-
-.attribution {
-  padding-top: 2em;
 }
 /*# sourceMappingURL=main.css.map */

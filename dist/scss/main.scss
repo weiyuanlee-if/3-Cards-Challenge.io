@@ -96,45 +96,61 @@ body {
 }
 
 #card-component {
+
     margin: 8em 15em 0 15em;
     display: flex;
     flex-direction: row;
     justify-content: center;
 
     @include xs {
+
         margin: 8em 15em 0 15em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        
     }
+    
     @include sm {
+       
         margin: 8em 15em 0 15em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        
     }
+    
     @include md {
+    
         margin: 8em 15em 0 15em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
     }
+    
     @include lg {
+       
         margin: 8em 15em 0 15em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
     }
+    
     @include xl {
+        
         margin: 8em 15em 0 15em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    }
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    
 }
 
 #sedan-card {
-    
+
     background-color: hsl(31, 77%, 52%);
     @include overall-card-layout;
     @include border-radius-left;
@@ -157,6 +173,7 @@ body {
     @include overall-card-layout;
 
 }
+
 #suvs-card button {
     color: hsl(184, 100%, 22%);
 }
@@ -182,4 +199,4 @@ body {
     background-color: hsl(179, 100%, 13%);
 
 }
-
+}
