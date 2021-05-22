@@ -1,10 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
 
+$screen-xs-min: 425px; // Tiny phones
+$screen-sm-min: 576px; // Small tablets and large smartphones (landscape view)
+$screen-md-min: 768px; // Small tablets (portrait view)
+$screen-lg-min: 992px; // Tablets and small desktops
+$screen-xl-min: 1200px; // Large tablets and desktops
+
+@mixin xs {
+    @media (min-width: #{$screen-xs-min}) {
+        @content;
+    }
+}
+
+// Tiny devices
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+}
+
+// Small devices
+@mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+}
+
+// Medium devices
+@mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+}
+
+// Large devices
+@mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+}
+
+// Extra large devices
+
 @mixin border-radius-right {
     border-top-right-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
-
 }
 
 @mixin border-radius-left {
@@ -38,7 +79,6 @@
         display: block;
         margin-left: 3em;
         margin-bottom: 3em;
-        color: hsl(0, 0%, 95%);
         font-family: 'Lexend Deca', sans-serif;
         border: hsl(0, 0%, 95%);
         border-style: solid;
@@ -46,9 +86,8 @@
         padding: 1em 2em 1em 2em;
         text-align: center;
         cursor: pointer;
+        background-color: hsl(0, 0%, 95%);
     }
-
-
 
 }
 
@@ -61,10 +100,41 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+
+    @include xs {
+        margin: 8em 15em 0 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    @include sm {
+        margin: 8em 15em 0 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    @include md {
+        margin: 8em 15em 0 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    @include lg {
+        margin: 8em 15em 0 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    @include xl {
+        margin: 8em 15em 0 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
 }
 
 #sedan-card {
-
+    
     background-color: hsl(31, 77%, 52%);
     @include overall-card-layout;
     @include border-radius-left;
@@ -72,6 +142,11 @@ body {
 }
 
 #sedan-card button {
+    color: hsl(31, 77%, 52%);
+}
+
+#sedan-card button:hover {
+    color: hsl(0, 0%, 95%);
     background-color: hsl(31, 77%, 52%);
 }
 
@@ -82,8 +157,12 @@ body {
     @include overall-card-layout;
 
 }
-
 #suvs-card button {
+    color: hsl(184, 100%, 22%);
+}
+
+#suvs-card button:hover {
+    color: hsl(0, 0%, 95%);
     background-color: hsl(184, 100%, 22%);
 }
 
@@ -95,9 +174,12 @@ body {
 }
 
 #luxury-card button {
+    color: hsl(179, 100%, 13%);
+}
+
+#luxury-card button:hover {
+    color: hsl(0, 0%, 95%);
     background-color: hsl(179, 100%, 13%);
 
 }
-.attribution{
-    padding-top: 2em;
-}
+

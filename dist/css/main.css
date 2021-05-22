@@ -47,7 +47,6 @@ body {
   display: block;
   margin-left: 3em;
   margin-bottom: 3em;
-  color: #f2f2f2;
   font-family: 'Lexend Deca', sans-serif;
   border: #f2f2f2;
   border-style: solid;
@@ -55,9 +54,15 @@ body {
   padding: 1em 2em 1em 2em;
   text-align: center;
   cursor: pointer;
+  background-color: #f2f2f2;
 }
 
 #sedan-card button {
+  color: #e38826;
+}
+
+#sedan-card button:hover {
+  color: #f2f2f2;
   background-color: #e38826;
 }
 
@@ -88,7 +93,6 @@ body {
   display: block;
   margin-left: 3em;
   margin-bottom: 3em;
-  color: #f2f2f2;
   font-family: 'Lexend Deca', sans-serif;
   border: #f2f2f2;
   border-style: solid;
@@ -96,9 +100,15 @@ body {
   padding: 1em 2em 1em 2em;
   text-align: center;
   cursor: pointer;
+  background-color: #f2f2f2;
 }
 
 #suvs-card button {
+  color: #006970;
+}
+
+#suvs-card button:hover {
+  color: #f2f2f2;
   background-color: #006970;
 }
 
@@ -131,7 +141,6 @@ body {
   display: block;
   margin-left: 3em;
   margin-bottom: 3em;
-  color: #f2f2f2;
   font-family: 'Lexend Deca', sans-serif;
   border: #f2f2f2;
   border-style: solid;
@@ -139,9 +148,15 @@ body {
   padding: 1em 2em 1em 2em;
   text-align: center;
   cursor: pointer;
+  background-color: #f2f2f2;
 }
 
 #luxury-card button {
+  color: #004241;
+}
+
+#luxury-card button:hover {
+  color: #f2f2f2;
   background-color: #004241;
 }
 
